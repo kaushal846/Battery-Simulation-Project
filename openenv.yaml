@@ -1,0 +1,18 @@
+name: "BatteryEnv-RealWorld"
+version: "1.0.0"
+entry_point: "environment:BatteryEnv"
+description: "AI agent manages battery SoC and Temperature for EV systems."
+
+tasks:
+  - id: "battery_safety_v1"
+    difficulty: "easy"
+    description: "Keep battery above 20% for 50 steps."
+    target_score: 0.8
+  - id: "thermal_efficiency_v1"
+    difficulty: "medium"
+    description: "Handle load while keeping temp below 45C."
+    target_score: 0.85
+  - id: "grid_optimizer_v1"
+    difficulty: "hard"
+    description: "Maximize charge using 'is_charging' signals with zero failures."
+    target_score: 0.95
