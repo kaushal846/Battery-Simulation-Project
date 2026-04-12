@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "battery-optimizer-agent"
+version = "0.1.0"
+description = "Battery Optimizer Agent for OpenEnv Hackathon"
+dependencies = [
+    "openai",
+    "numpy",
+    "pandas"
+]
