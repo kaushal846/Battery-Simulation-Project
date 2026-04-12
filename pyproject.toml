@@ -6,8 +6,17 @@ build-backend = "setuptools.build_meta"
 name = "battery-optimizer-agent"
 version = "0.1.0"
 description = "Battery Optimizer Agent for OpenEnv Hackathon"
+readme = "README.md"
+requires-python = ">=3.9"
 dependencies = [
     "openai",
     "numpy",
-    "pandas"
+    "pandas",
+    "openenv-core>=0.2.0"
 ]
+
+[project.scripts]
+server = "inference:run_simulation"
+
+[tool.uv]
+managed = true
